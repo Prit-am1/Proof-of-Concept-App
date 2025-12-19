@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Demo Token Platform – Teaching POC
 
-## Getting Started
+## Overview
+This project is a **Proof of Concept (POC)** created strictly for **educational, teaching, and demonstration purposes**.
 
-First, run the development server:
+It showcases:
+- A modern frontend UI
+- Wallet connection awareness (read-only)
+- Simulated smart-contract behavior
+- Simulated transaction flow
+
+⚠️ **No real blockchain, cryptocurrency, or financial transaction is involved.**
+
+---
+
+## Key Characteristics
+
+- **Demo Mode Only**
+- **Zero Financial Risk**
+- **No Real Blockchain Interaction**
+- **No Wallet Signing**
+- **No Asset Transfer**
+
+All features are implemented using **in-memory UI simulation**.
+
+---
+
+## Technology Stack
+
+- **Frontend:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Wallet Detection:** Ethers.js (read-only usage)
+- **State Management:** React Hooks (`useState`)
+
+---
+
+## What This POC Demonstrates
+
+### 1. Wallet Readiness (Read-Only)
+- Detects presence of a Web3 wallet (e.g., Rabby)
+- Reads and displays the public wallet address
+- Does **not** request signing or transactions
+
+### 2. Simulated Contract State
+- Demonstrates read/write flow similar to a smart contract
+- State exists only in browser memory
+- Resets on page refresh
+
+### 3. Simulated Transaction Flow
+- Shows a realistic transaction lifecycle:
+  - Submitted
+  - Pending
+  - Confirmed
+- Uses UI simulation only (no wallet popups)
+
+### 4. Activity Log
+- Displays user actions (connect, read, update, transaction)
+- Mimics transaction history UX
+- Fully in-memory
+
+---
+
+## How to Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
